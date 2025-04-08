@@ -1,13 +1,97 @@
-\documentclass{article}
-\usepackage{graphicx} % Required for inserting images
+\documentclass[10pt,conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+
+\setlength{\textfloatsep}{4pt}
+\setlength{\dbltextfloatsep}{4pt}
+\setlength{\belowdisplayskip}{4pt}
+\setlength{\belowdisplayshortskip}{4pt}
+\setlength{\abovedisplayshortskip}{4pt}
+\setlength{\leftmargini}{10pt}
+
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{booktabs}
+\renewcommand{\citepunct}{,\penalty\citepunctpenalty\,}
+\renewcommand{\citedash}{--}% optionally
+
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+
+% Algorithm Template
+\usepackage[ruled,linesnumbered]{algorithm2e}
+% \RestyleAlgo{ruled}
+\SetKwComment{Comment}{/* }{ */}
+
+% Page Numbering
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Def.}
+\newtheorem{observation}{Obs.}
+
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{tikz}
+
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+\node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\newcommand\crule[4][black]{\raisebox{#4}{\textcolor{#1}{\rule{#2}{#3}}}}
+
+% coloring in ref and cite
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    }
+\urlstyle{same}
+
+
+\usepackage{multicol,multirow}
+
+% frame commands
+\usepackage{framed}
+\definecolor{shadecolor}{gray}{0.9}
+
+\newcommand{\green}{\color{green}}
+\newcommand{\black}{\color{black}}
+\newcommand{\red}{\color{red}}
+\newcommand{\blue}{\color{blue}}
+\newcommand{\magenta}{\color{magenta}}
+\newcommand{\zexin}[1]{\textcolor{red}{(zexin: #1})}
+
+% If your conference documentclass or package defines these macros,
+% change these macros to different names.
+\newcommand*{\affaddr}[1]{#1} % No op here. Customize it for different styles.
+\newcommand*{\affmark}[1][*]{\textsuperscript{#1}}
+\newcommand*{\email}[1]{\texttt{#1}}
 
 \title{Papers with sauce}
-\author{Ziliang }
+
+\author{%
+Ziliang Zhang\\
+\affaddr{University of California, Riverside}\\
+\email{zzhan357@ucr.edu}%
+}
+
 \date{April 2025}
 
 \begin{document}
 
 \maketitle
+
+\thispagestyle{fancy}
+
+\begin{abstract} 
+Test for abstract
+\end{abstract}
 
 \section{Introduction}
 
