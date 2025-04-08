@@ -6,3 +6,4 @@ The [``main.pdf``](main/main.pdf) is the current version, which is rendered by [
 ## File Structure:
 - main: folders containing all tex files for main docs
 - figs: folders for all graphics items that are needed for every files and docs
+- visualizer: folders for all plotting tools and samples
