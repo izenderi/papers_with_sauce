@@ -50,9 +50,9 @@ T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
     linkcolor=blue,
     filecolor=magenta,      
     urlcolor=cyan,
+    citecolor=brown,
     }
 \urlstyle{same}
-
 
 \usepackage{multicol,multirow}
 
@@ -78,7 +78,7 @@ T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \author{%
 Ziliang Zhang\\
 \affaddr{University of California, Riverside}\\
-\email{zzhan357@ucr.edu}%
+% \email{zzhan357@ucr.edu}%
 }
 
 \date{April 2025}
@@ -94,5 +94,19 @@ Test for abstract
 \end{abstract}
 
 \section{Introduction}
+
+Testing cite~\cite{nano}
+
+\begin{figure}[t]
+\includegraphics[width=\linewidth]{figs/Work-Education.pdf}
+\caption{Test Figure figs/Work-Education.pdf}
+\label{fig:test}
+\end{figure}
+
+Test Fig~\ref{fig:test}
+
+\bibliography{main/ref}
+\bibliographystyle{IEEEtran}
+
 
 \end{document}
